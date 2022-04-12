@@ -1,7 +1,9 @@
+.env/
+__pycache__/
 2-ConceptosBasicosDeImagenes/
 3-ConceptosBasicoDeRedesNeuronales/
 4-TeoriaDeRedesNeuronalesConvolucionales/
 5-TareasClasicasDeVisionPorComputador/
 6-DespliegueDeModelosEnSistemasEmbebidos/
 GithubPushPull
-.env/
+
