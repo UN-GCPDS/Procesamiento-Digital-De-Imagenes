@@ -17,11 +17,11 @@ def build_sister_model(input_shape,embeddingDim):
     input = Input(shape=input_shape)
     x = Rescaling(scale=1./255.)(input)
     x = BatchNormalization()(x)
-    x = Conv2D(64,(5,5), padding='same',activation='relu')(x)
+    x = Conv2D(4,(5,5), padding='same',activation='relu')(x)
     x = AveragePooling2D(pool_size=(2,2))(x)
 
 
-    x = Conv2D(64,(2,2), padding='same',activation='relu')(x)
+    x = Conv2D(16,(2,2), padding='same',activation='relu')(x)
     x = AveragePooling2D(pool_size=(2,2))(x)
     x = BatchNormalization()(x)
 
@@ -34,7 +34,7 @@ def build_sister_model(input_shape,embeddingDim):
     return model 
 
 
-def build_siamese_model(input_shape=(28,28,1),embeddingDim=48):
+def build_siamese_model(input_shape=(28,28,1),embeddingDim=10):
     """Return siamese model
     """
     imgA = Input(shape=input_shape,name='InputA')
