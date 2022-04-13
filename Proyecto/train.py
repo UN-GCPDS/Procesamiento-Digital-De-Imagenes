@@ -74,6 +74,7 @@ def main(epochs=10,batch_size=32):
     plt.plot(val_binary_accuracy)
     plt.legend(['binary accuracy','val binary accuracy'])
     plt.show()
+    plt.savefig('TrainingResults.png')
 
 if __name__ == "__main__":
     arguments = docopt(__doc__)

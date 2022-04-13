@@ -3,10 +3,11 @@ from tensorflow.keras.layers import (Input,
                                     Conv2D,
                                     Dense,
                                     Dropout,
-                                    GlobalAveragePooling2D,
-                                    MaxPooling2D,
+                                    Flatten,
+                                    AveragePooling2D,
                                     Rescaling,
-                                    Lambda)
+                                    Lambda,
+                                    BatchNormalization)
 
 import tensorflow.keras.backend as K
 
@@ -15,16 +16,18 @@ def build_sister_model(input_shape,embeddingDim):
     """
     input = Input(shape=input_shape)
     x = Rescaling(scale=1./255.)(input)
-    x = Conv2D(64,(2,2), padding='same',activation='relu')(x)
-    x = MaxPooling2D(pool_size=(2,2))(x)
-    x = Dropout(0.3)(x)
+    x = BatchNormalization()(x)
+    x = Conv2D(64,(5,5), padding='same',activation='relu')(x)
+    x = AveragePooling2D(pool_size=(2,2))(x)
+
 
     x = Conv2D(64,(2,2), padding='same',activation='relu')(x)
-    x = MaxPooling2D(pool_size=(2,2))(x)
-    x = Dropout(0.3)(x)
+    x = AveragePooling2D(pool_size=(2,2))(x)
+    x = BatchNormalization()(x)
 
-    pooledOutput = GlobalAveragePooling2D()(x)
-    outputs = Dense(embeddingDim)(pooledOutput)
+    x = Flatten()(x)
+    x = BatchNormalization()(x)
+    outputs = Dense(embeddingDim)(x)
 
     model = Model(input,outputs,name='SharedNetwork')
 
