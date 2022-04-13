@@ -40,7 +40,7 @@ def make_pairs(images,labels):
 def get_data():
     (trainX, trainY), (testX, testY) = mnist.load_data()
 
-    train = make_pairs(trainX[:20], trainY[:20])
+    train = make_pairs(trainX, trainY)
     test = make_pairs(testX, testY)
     return train,test
 
