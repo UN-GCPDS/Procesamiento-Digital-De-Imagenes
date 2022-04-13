@@ -16,7 +16,7 @@ def generate_templates():
     for unique_label in unique_labels:
         path = os.path.join(root_path,str(unique_label))
         os.makedirs(path,exist_ok=True)
-        idx_class =np.random.choice(np.where(labels== unique_label)[0],size=1)
+        idx_class =np.random.choice(np.where(labels== unique_label)[0],size=10)
         for i,idx in enumerate(idx_class):
             path_file = os.path.join(path,f'{i}.png')
             cv2.imwrite(path_file, images[idx])
@@ -33,8 +33,6 @@ def load_templates():
     return images, labels 
 
     
-
-
 
 if __name__ == "__main__":
     generate_templates()

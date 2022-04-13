@@ -35,7 +35,7 @@ def main(epochs=10,batch_size=32):
 
 
     model_checkpoint_callback = ModelCheckpoint(
-                                            filepath='model_{epoch:02d}.h5',
+                                            filepath='model.h5',
                                             save_weights_only=False,
                                             monitor='val_binary_accuracy',
                                             mode='max',
@@ -73,8 +73,9 @@ def main(epochs=10,batch_size=32):
     plt.plot(binary_accuracy)
     plt.plot(val_binary_accuracy)
     plt.legend(['binary accuracy','val binary accuracy'])
-    plt.show()
     plt.savefig('TrainingResults.png')
+    plt.show()
+    
 
 if __name__ == "__main__":
     arguments = docopt(__doc__)

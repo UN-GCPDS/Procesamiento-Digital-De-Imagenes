@@ -1,8 +1,10 @@
 from tensorflow.keras.models import load_model 
-from model import uclidean_distance
 import cv2 
 import numpy as np
+import matplotlib.pyplot as plt 
 
+
+from model import uclidean_distance
 from templates.templates import load_templates
 
 
@@ -21,7 +23,7 @@ def run_with_camera():
     model = load_model('trainedmodel.h5',custom_objects={'Cosine_Distance':uclidean_distance})
     imagesA = images 
 
-    cap = cv2.VideoCapture('/dev/video2')
+    cap = cv2.VideoCapture(0)
 
 
     while cap.isOpened():
@@ -59,7 +61,11 @@ def run_one_img(img):
     imagesB = np.array([img]*len(images))
     results = model.predict((imagesA,imagesB))
     result_class, result_prop = get_result(labels,results) 
-    print(result_class, result_prop)
+    
+    plt.imshow(img)
+    plt.title(f'Class: {result_class}, Prop: {result_prop:.2f}')
+    plt.show()
+
 
 
 if __name__ == "__main__":

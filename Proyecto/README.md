@@ -2,8 +2,8 @@
 # <center> Sistema de Verificación </center>
 
 # TODO
-1. Agregar documentación 
-
+1. Agregar documentación.
+2. Configurar inferencia para caso real.
 
 # Referencias  
 * [Siamese networks with Keras, TensorFlow, and Deep Learning](https://pyimagesearch.com/2020/11/30/siamese-networks-with-keras-tensorflow-and-deep-learning/)
