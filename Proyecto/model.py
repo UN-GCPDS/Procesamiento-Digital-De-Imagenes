@@ -17,11 +17,11 @@ def build_sister_model(input_shape,embeddingDim):
     input = Input(shape=input_shape)
     x = Rescaling(scale=1./255.)(input)
     x = BatchNormalization()(x)
-    x = Conv2D(4,(5,5), padding='same',activation='relu')(x)
+    x = Conv2D(4,(5,5),activation='relu')(x)
     x = AveragePooling2D(pool_size=(2,2))(x)
 
 
-    x = Conv2D(16,(2,2), padding='same',activation='relu')(x)
+    x = Conv2D(16,(5,5),activation='relu')(x)
     x = AveragePooling2D(pool_size=(2,2))(x)
     x = BatchNormalization()(x)
 
@@ -44,7 +44,8 @@ def build_siamese_model(input_shape=(28,28,1),embeddingDim=10):
     featB = featureExtractor(imgB)
 
     distance = Lambda(uclidean_distance,name='Cosine_Distance')([featA,featB])
-    outputs = Dense(1,activation='sigmoid',name='Output')(distance)
+    x = BatchNormalization()(distance)
+    outputs = Dense(1,activation='sigmoid',name='Output')(x)
     model = Model(inputs=[imgA,imgB],outputs=outputs)
 
     return model 
