@@ -16,6 +16,7 @@ Desarrollar un sistema de visión por computador para la verificación de identi
 # TODO
 1. Agregar documentación.
 2. Configurar inferencia para caso real.
+3. Despliegue en sistema embebido.
 
 # Referencias  
 * [Siamese networks with Keras, TensorFlow, and Deep Learning](https://pyimagesearch.com/2020/11/30/siamese-networks-with-keras-tensorflow-and-deep-learning/)
