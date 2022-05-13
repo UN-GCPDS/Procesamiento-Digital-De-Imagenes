@@ -7,6 +7,41 @@ Repositorio del curso de Procesamiento Digital de Imágenes.
 
 ## Instalación 
 
+### Configuración (Solo para Raspberry Pi)
+
+#### Actualizar el sistema 
+
+```
+sudo pacman -Syyu
+```
+
+### Instalar Python 
+
+```
+sudo pacman -S yay
+```
+
+```
+sudo yay -S python37
+```
+
+### Configurar Camara 
+
+```
+suco echo star_x=1 >> /boot/config.txt
+```
+
+Reinicie la Raspberry Pi
+
+
+
+
+
+
+
+
+
+
 ### Clonar repositorio 
 ```
 git clone https://github.com/UN-GCPDS/Procesamiento-Digital-De-Imagenes.git
