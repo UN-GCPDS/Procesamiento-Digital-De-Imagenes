@@ -15,7 +15,7 @@ Repositorio del curso de Procesamiento Digital de Imágenes.
 sudo pacman -Syyu
 ```
 
-### Instalar Python 
+#### Instalar Python 
 
 ```
 sudo pacman -S yay
@@ -25,7 +25,7 @@ sudo pacman -S yay
 sudo yay -S python37
 ```
 
-### Configurar Camara 
+#### Configurar Camara 
 
 ```
 suco echo star_x=1 >> /boot/config.txt
