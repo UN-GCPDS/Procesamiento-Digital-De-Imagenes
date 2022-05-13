@@ -52,6 +52,13 @@ cd Procesamiento-Digital-De-Imagenes
 
 ### Creación ambiente virtual 
 
+Verificar que la versión de python sea la 3.7 
+
+
+```
+python --version 
+```
+
 ```
 python -m venv .env 
 ```
