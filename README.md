@@ -28,7 +28,7 @@ sudo yay -S python37
 #### Configurar Camara 
 
 ```
-suco echo star_x=1 >> /boot/config.txt
+sudo echo start_x=1 >> /boot/config.txt
 ```
 
 Reinicie la Raspberry Pi
