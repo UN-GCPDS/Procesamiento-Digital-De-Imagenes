@@ -22,7 +22,7 @@ sudo pacman -S yay
 ```
 
 ```
-sudo yay -S python37
+yay -S python37
 ```
 
 #### Configurar Camara 
