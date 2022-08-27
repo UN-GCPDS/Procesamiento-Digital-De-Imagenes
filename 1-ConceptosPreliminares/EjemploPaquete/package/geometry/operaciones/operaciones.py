@@ -1,0 +1,3 @@
+
+def obtener_area(objeto_geometrico):
+    ...
