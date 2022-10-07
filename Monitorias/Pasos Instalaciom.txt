@@ -1,0 +1,25 @@
+jetson:
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
+sudo mkdir /var/lib/dpkg/info/
+sudo apt-get update
+sudo apt-get -f install
+sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old/
+sudo rm -rf /var/lib/dpkg/info
+sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa   (enter)
+sudo apt install python3.7
+sudo apt-get install python3.7-venv
+sudo apt --fix-broken install
+
+Raspberry:
+Actualizar
+start_x=1 /boot_manjaro/config.txt
+sudo pacman -S yay
+yay -S python37 (N, N, Y, Y, Y)
