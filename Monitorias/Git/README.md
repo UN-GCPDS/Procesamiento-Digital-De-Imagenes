@@ -41,7 +41,7 @@ Con el siguiente comando vamos a agregar todos los archivos que están en la car
 ````
 git add .
 ````
-En este paso realizaremos nuestro primer "commit" esta es la forma que Git tiene para registrar los cambios de nuestros archivos, gracias podemos ver versiones pasadas de nuestros proyectos. Importante entre comillas siempre poner un mensaje, preferiblemente la versión de su proyecto o un mensaje de describiendo que realizaron en el proyecto.
+En este paso realizaremos nuestro primer "commit" esta es la forma que Git tiene para registrar los cambios de nuestros archivos, gracias a este podemos ver versiones pasadas de nuestros proyectos. Importante entre comillas siempre poner un mensaje, preferiblemente la versión de su proyecto o un mensaje de describiendo que realizaron en el proyecto.
 
 ````
 git commit - m "Version_#1"
