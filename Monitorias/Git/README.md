@@ -59,3 +59,4 @@ El último paso es subir nuestros archivos, el cual se realiza con el siguiente 
 ````
 git push -u origin main
 ````
+Si es la primera vez que suben archivos desde su computador a su GitHub, este les pedirá credenciales o iniciar sesión nuevamente, ya con esto tendrán sus archivos subidos a su repositorio, si desean conocer más comandos que le puedan ser de utilidad revisar el PDF llamado " git-cheat-sheet-education " que se encuentra en esta misma carpeta.
