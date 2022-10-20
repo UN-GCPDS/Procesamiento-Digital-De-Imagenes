@@ -1,8 +1,6 @@
 .env/
 __pycache__/
-3-ConceptosBasicoDeRedesNeuronales/
-4-TeoriaDeRedesNeuronalesConvolucionales/
-5-TareasClasicasDeVisionPorComputador/
-6-DespliegueDeModelosEnSistemasEmbebidos/
 GithubPushPull
-
+2-ConceptosBasicosDeImagenes/scripts/examen_2
+2-ConceptosBasicosDeImagenes/scripts/exam_1.py
+2-ConceptosBasicosDeImagenes/scripts/Morpho.py
