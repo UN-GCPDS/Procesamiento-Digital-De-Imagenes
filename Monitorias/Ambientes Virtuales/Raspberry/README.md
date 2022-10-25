@@ -15,7 +15,7 @@ Guardamos este les pedirá la contraseña la escriben y aceptar, si no tienen co
 Para la creación de los ambientes virtuales en Raspberry, primero debemos actualizar nuestro sistema operativo, para esto debemos conectar al internet nuestra
 Raspberry Pi, la Raspberry Pi cuenta con modulo WIFI.
 
-Una vez conectados a internet abrimos la terminal de linux con "Ctrl + alt + t" 
+Una vez conectados a internet abrimos la terminal de linux con la siguiente combinación de teclas "Ctrl + alt + t" 
 
 Con la terminal abierta escribimos el siguiente comando:
 ````
@@ -54,3 +54,47 @@ Una vez ejecutado, nos harán 4 preguntas, por lo cual escribiremos en la termin
 Para finalizar nos pedira la contraseña, si no tenemos lo dejamos en blanco.
 Nos preguntará si queremos seguir con la instalación, escribimos que "S" o "Y" según el idioma.
 Dejamos que termine de instalar este proceso es demorado, dejarlo hasta que se termine.
+
+Para verificar que se instaló bien, abrimos la terminal y escribimos el siguiente comando:
+````
+python3.7 --version
+````
+Debajo de esa línea debe aparecer "Python 3.7"
+
+## Creación del ambiente virtual
+
+Creamos una carpeta en el escritorio con el nombre que quieran.
+La abrimos y ejecutamos la terminal en esta carpeta, para eso usamos la siguiente combinación de teclas "Alt + shift + F4".
+Necesitaremos el repositorio del curso por lo que lo clonaremos.
+````
+git clone https://github.com/UN-GCPDS/Procesamiento-Digital-De-Imagenes.git
+````
+abrimos la carpeta resultante y abrimos una nueva terminal dentro de la carpeta "Procesamiento-Digital-De-Imagenes", en esta carpeta vamos a crear
+nuestro ambiente virtual para eso usamos los siguientes comandos:
+````
+python3.7 -m venv .env 
+````
+dejamos que finalice, si activamos la vista de archivos ocultos debe aparecer una carpeta con el nombre de".env", esto significa que quedo bien creado el ambiente.
+
+## Activacion del ambiente virtual
+
+En la carpeta donde creamos el ambiente virtual, abrimos la terminal en esa carpeta y ejecutamos el siguiente comando:
+````
+source .env/bin/activate 
+````
+si está correctamente abierta en la parte izquierda de la línea de comando debe aparecer"(.env)".
+
+## Instalación paquetes necesarios
+
+Para que los scripts corran de manera correcta debemos instalar unos paquetes, activamos nuestro ambiente virtual y para instalar la paquetería usaremos el siguiente comando:
+````
+pip install -r requirements.txt
+````
+Esperamos que se termine de instalar, este proceso puede tomar unos minutos.
+
+
+## Desactivar ambiente virtual
+Para desactivar el ambiente virtual ejecutamos el siguiente comando en la terminal:
+````
+deactivate
+````
