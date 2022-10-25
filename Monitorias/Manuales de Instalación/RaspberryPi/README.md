@@ -18,3 +18,5 @@ https://www.raspberrypi.com/software/
 + Realizan la configuración inicial del sistema, al finalizar les pedirá un reinicio.
 
 Ya con estos pasos tendrán en su Raspberry PI el sistema operativo Manjaro correctamente instalado.
+
+Si quiren conocer un poco mas pueden revisar el PDF "Raspberry Pi.pdf que se encuentra en esta carpeta"
