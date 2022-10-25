@@ -19,4 +19,4 @@ https://www.raspberrypi.com/software/
 
 Ya con estos pasos tendrán en su Raspberry PI el sistema operativo Manjaro correctamente instalado.
 
-Si quieren conocer un poco más pueden revisar el PDF "Raspberry Pi.pdf que se encuentra en esta carpeta"
+Si quieren conocer un poco más pueden revisar el PDF "Raspberry Pi.pdf" que se encuentra en esta carpeta.
