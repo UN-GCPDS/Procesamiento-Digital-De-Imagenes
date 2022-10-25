@@ -23,6 +23,7 @@ Al finalizar reinician.
 ## Instalacion Python 3.7
 Por defecto esta version de linux no viene con Python 3.7, pero para este curso y correr los scripts que se requieren necesitamos Python 3.7, para la instalacion abrimos
 la terminal y escribimos los siguientes comandos:
+Escribimos la contraseña cada vez que nos lo pida y "Y" cuando nos pregunten.
 ````
 sudo apt-get update
 ````
