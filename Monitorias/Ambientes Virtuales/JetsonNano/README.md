@@ -24,15 +24,29 @@ Al finalizar reinician.
 Por defecto esta version de linux no viene con Python 3.7, pero para este curso y correr los scripts que se requieren necesitamos Python 3.7, para la instalacion abrimos
 la terminal y escribimos los siguientes comandos:
 ````
+sudo apt-get update
+````
+````
+sudo apt-get upgrade
+````
+````
+sudo apt install software-properties-common
+````
+````
+sudo add-apt-repository ppa:deadsnakes/ppa
+````
+Damos a enter cuando no pregunten si queremos continuar.
+
+seguimos con los comandos:
+````
 sudo apt install python3.7
 ````
-Nos pedira la contraseña, la escribimos y damos a enter.
-
-al terminar escribimos el siguiente comando:
 ````
 sudo apt-get install python3.7-venv
 ````
-
+````
+sudo apt --fix-broken install
+````
 para corroborar la correcta instalacion de Python 3.7 escribimos el siguiente comando:
 ````
 python3.7 --version
