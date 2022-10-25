@@ -5,4 +5,6 @@ Para realizar la instalación necesitan una micro SD y un adaptador micro SD a U
 ## Descarga de archivos
 
 Nos dirigimos al siguiente enlace:
-
+````
+https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
+````
