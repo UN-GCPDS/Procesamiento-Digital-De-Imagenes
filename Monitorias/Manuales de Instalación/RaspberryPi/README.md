@@ -17,8 +17,9 @@ https://www.raspberrypi.com/software/
 Una vez finalizado pueden retirar la micro SD y la insertan en la RaspberryPI.
 
 Para corroborar que esté bien instalado encienden la RasberryPI, al encender deben tener instalado el sistema operativo Manjaro.
-Realizan la configuración inicial del sistema, al finalizar les pedirá un reinicio.
+Realizan la configuración inicial del sistema, recomendamos instalar el sistema operativo en ingles, al finalizar les pedirá un reinicio.
 
 Ya con estos pasos tendrán en su Raspberry PI el sistema operativo Manjaro correctamente instalado.
 
 Si quieren conocer un poco más pueden revisar el PDF "Raspberry Pi.pdf" que se encuentra en esta carpeta.
+1
