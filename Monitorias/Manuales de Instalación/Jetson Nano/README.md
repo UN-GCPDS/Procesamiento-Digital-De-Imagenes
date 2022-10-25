@@ -24,6 +24,6 @@ Este programa nos sirve para instalar el sistema operativo en nuestra microSD, u
 + Seleccionamos la opcion "Flash from file"
 + Buscamos la ISO de Nvidia con extension .img lo seleccionamos y clicamos en abrir
 + Seleccionamos la opcion "Select target" y escogemos nuestra microSD y clicamos en "Select"
-+ Por ultimo seleccionamos la opcion "Flash!"
++ Por ultimo seleccionamos la opcion "Flash!", el programa comenzara a instalar el sistema operativo, este puede tardar varios minutos.
 
-El programa comenzara a instalar el sistema operativo, este puede tardar varios minutos.
+Una vez finalizado pueden retirar la micro SD y la insertan en la JetsonNano.
