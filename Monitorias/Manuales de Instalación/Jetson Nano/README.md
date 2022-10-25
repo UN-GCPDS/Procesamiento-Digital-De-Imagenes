@@ -27,3 +27,10 @@ Este programa nos sirve para instalar el sistema operativo en nuestra microSD, u
 + Por ultimo seleccionamos la opcion "Flash!", el programa comenzara a instalar el sistema operativo, este puede tardar varios minutos.
 
 Una vez finalizado pueden retirar la micro SD y la insertan en la JetsonNano.
+
+Para corroborar que esté bien instalado encienden la JetsonNano, al encender deben tener instalado el sistema operativo. Realizan la configuración inicial del sistema, al finalizar les pedirá un reinicio
+
+Ya con estos pasos tendrán en su JetsonNano el sistema operativo correctamente instalado.
+
+Si quieren conocer un poco más pueden revisar el PDF "Jetson Nano.pdf" que se encuentra en esta carpeta.
+
