@@ -9,11 +9,13 @@ con la terminal abirta escribimos el siguiente comando:
 ````
 sudo apt-get update
 ````
+nos pedira la contraseña la escribimos y enter.
+
 al terminar escribimos el siguiente comando:
 ````
 sudo apt-get upgrade
 ````
-nos pedira la contraseña la escribimos y enter, luego nos preguntara si queremos continuar escribimos "S" o "Y" segun el idioma damos enter y esperamos a que termine
+luego nos preguntara si queremos continuar escribimos "S" o "Y" segun el idioma damos enter y esperamos a que termine
 puede tomar varios minutos.
 
 Al finalizar reinician.
