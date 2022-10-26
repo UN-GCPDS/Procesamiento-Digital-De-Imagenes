@@ -2,6 +2,9 @@
 
 Usage:
     2_readImage.py <path>
+    
+Options:
+    <path>      Path to folder to open the image. 
 """
 from docopt import docopt
 
